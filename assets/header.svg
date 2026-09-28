@@ -29,16 +29,16 @@
   <path class="br" style="animation-delay:.2s" d="M10 224 V238 H24"/>
   <path class="br" style="animation-delay:.3s" d="M776 238 H790 V224"/>
 </g>
-<text class="up" x="400.0" y="62" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">Tran Dinh Vo</text>
+<text class="up" x="400.0" y="60" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="28" font-weight="700" fill="#0f172a" text-anchor="middle" letter-spacing="1">TRAN DINH VO</text>
 <g class="up" style="animation-delay:.2s">
 <rect x="325.0" y="74" width="150" height="20" rx="10" fill="#fff" stroke="#cfd8e6"/>
 <circle class="pulse" cx="339.0" cy="84" r="3" fill="#d97706"/>
 <text x="406.0" y="88" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#64748b" text-anchor="middle" letter-spacing="1.5">GITHUB  ·  4 FOLLOWERS</text>
 </g>
 <line class="grow" style="animation-delay:.4s" x1="370.0" y1="106" x2="430.0" y2="106" stroke="#2563eb" stroke-width="2"/>
-<text x="400.0" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#0f172a" text-anchor="middle">Full-stack Developer</text>
-<rect x="321.0" y="116" width="162" height="22" fill="#fbfcfe"><animate attributeName="x" from="321.0" to="483.0" begin="0.6s" dur="1.2s" fill="freeze" calcMode="discrete" values="321.0;328.9;336.8;344.7;352.6;360.5;368.4;376.3;384.2;392.1;400.0;407.9;415.8;423.7;431.6;439.5;447.4;455.3;463.2;471.1;479.0;483.0"/><animate attributeName="width" to="0" begin="1.8s" dur="0.01s" fill="freeze"/></rect>
-<rect class="blink" x="321.0" y="119" width="2" height="17" fill="#2563eb"><animate attributeName="x" begin="0.6s" dur="1.2s" fill="freeze" calcMode="discrete" values="321.0;328.9;336.8;344.7;352.6;360.5;368.4;376.3;384.2;392.1;400.0;407.9;415.8;423.7;431.6;439.5;447.4;455.3;463.2;471.1;479.0"/></rect>
+<defs><clipPath id="typeclip"><rect x="302.0" y="112" height="24" width="0"><animate attributeName="width" from="0" to="196.0" begin="0.6s" dur="1.1s" fill="freeze" calcMode="spline" keySplines=".3 0 .2 1"/></rect></clipPath></defs>
+<g clip-path="url(#typeclip)"><text x="400.0" y="132" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="16" font-weight="600" fill="#0f172a" text-anchor="middle" letter-spacing="1">FULL-STACK DEVELOPER</text></g>
+<rect class="blink" style="animation-delay:1.7s" x="304.0" y="118" width="2" height="16" fill="#2563eb" opacity="0"><animate attributeName="x" from="304.0" to="496.0" begin="0.6s" dur="1.1s" fill="freeze" calcMode="spline" keySplines=".3 0 .2 1"/><animate attributeName="opacity" to="1" begin="0.6s" dur="0.05s" fill="freeze"/></rect>
 <text class="in" style="animation-delay:1.9s" x="400.0" y="150" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8.5" fill="#2563eb" text-anchor="middle" letter-spacing="2">BACKEND  ·  FRONTEND  ·  DATABASE DESIGN</text>
 <line class="grow" style="animation-delay:.5s;animation-duration:1.2s" x1="160" y1="186" x2="640" y2="186" stroke="#cfd8e6" stroke-width="1.5"/>
 <g class="in" style="animation-delay:0.7s">
