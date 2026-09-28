@@ -52,7 +52,7 @@ def terminal():
             tw = len(full) * CW
             dur = max(0.35, len(full) * 0.045)
             cid = f"t{i}"
-            inner.append(f'<clipPath id="{cid}"><rect x="{wx+16}" y="{y-12}" height="16" width="0">'
+            inner.append(f'<clipPath id="{cid}"><rect x="{wx+16}" y="{y-12}" height="16" width="{tw+2}">'
                          f'<animate attributeName="width" from="0" to="{tw+2}" begin="{t:.2f}s" dur="{dur:.2f}s" '
                          f'fill="freeze" calcMode="discrete" '
                          f'values="{";".join(f"{CW*k:.1f}" for k in range(len(full)+1))}"/></rect></clipPath>')
