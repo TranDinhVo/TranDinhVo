@@ -23,6 +23,13 @@
   <img src="assets/proj-monkeymail.svg" alt="MonkeyMail" width="190">
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TranDinhVo/TranDinhVo/output/snake-dark.svg">
+    <img src="https://raw.githubusercontent.com/TranDinhVo/TranDinhVo/output/snake.svg" alt="Contribution snake" width="800">
+  </picture>
+</p>
+
 <details>
 <summary><b>About me</b></summary>
 <br>
