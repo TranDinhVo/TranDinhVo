@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="158" viewBox="0 0 800 158">
+<style>
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes ping{0%{r:3;opacity:.8}100%{r:11;opacity:0}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes shimmer{from{transform:translateX(-160px)}to{transform:translateX(160px)}}
+@keyframes bracket{from{stroke-dashoffset:28}to{stroke-dashoffset:0}}
+.up{opacity:0;animation:up .6s ease-out forwards}
+.in{opacity:0;animation:fade .6s ease-out forwards}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.6s ease-in-out infinite}
+.blink{animation:blink 1s step-end infinite}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow .8s cubic-bezier(.2,.8,.2,1) forwards}
+.br{stroke-dasharray:28;stroke-dashoffset:28;animation:bracket .7s ease-out forwards}
+</style>
+<defs>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e6ebf3" stroke-width="1"/>
+  </pattern>
+</defs>
+<rect width="800" height="158" rx="6" fill="#fbfcfe"/>
+<rect width="800" height="158" rx="6" fill="url(#grid)"/>
+<rect x="0.5" y="0.5" width="799" height="157" rx="6" fill="none" stroke="#cfd8e6"/>
+<g fill="none" stroke="#0f172a" stroke-width="1.5">
+  <path class="br" d="M10 24 V10 H24"/>
+  <path class="br" style="animation-delay:.1s" d="M776 10 H790 V24"/>
+  <path class="br" style="animation-delay:.2s" d="M10 134 V148 H24"/>
+  <path class="br" style="animation-delay:.3s" d="M776 148 H790 V134"/>
+</g>
+<text class="in" style="animation-delay:0.1s" x="400.0" y="26" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9" fill="#64748b" text-anchor="middle" letter-spacing="2.5">AWARDS &amp; COMPETITIVE PROGRAMMING</text>
+<g class="up" style="animation-delay:0.20s">
+<path d="M115.5 68 l-4 16 6 -3 5 3 -3 -16z" fill="#ca8a04" opacity=".55"/>
+<path d="M129.5 68 l4 16 -6 -3 -5 3 3 -16z" fill="#ca8a04" opacity=".8"/>
+<circle cx="122.5" cy="60" r="15" fill="#ffffff" stroke="#ca8a04" stroke-width="2.5"/>
+<circle cx="122.5" cy="60" r="10.5" fill="#ca8a04" opacity=".13"/>
+<text x="122.5" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="700" fill="#ca8a04" text-anchor="middle">1</text>
+</g>
+<circle cx="122.5" cy="60" r="15" fill="none" stroke="#ca8a04"><animate attributeName="r" values="15;26" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".55;0" dur="2.2s" repeatCount="indefinite"/></circle>
+<text class="in" style="animation-delay:0.35s" x="122.5" y="104" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8.5" fill="#ca8a04" text-anchor="middle" letter-spacing="1.2">FIRST PRIZE</text>
+<text class="in" style="animation-delay:0.45s" x="122.5" y="119" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#64748b" text-anchor="middle">VN Mathematical Olympiad</text>
+<text class="in" style="animation-delay:0.55s" x="122.5" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">2024</text>
+<g class="up" style="animation-delay:0.35s">
+<path d="M300.5 68 l-4 16 6 -3 5 3 -3 -16z" fill="#7c8899" opacity=".55"/>
+<path d="M314.5 68 l4 16 -6 -3 -5 3 3 -16z" fill="#7c8899" opacity=".8"/>
+<circle cx="307.5" cy="60" r="15" fill="#ffffff" stroke="#7c8899" stroke-width="2.5"/>
+<circle cx="307.5" cy="60" r="10.5" fill="#7c8899" opacity=".13"/>
+<text x="307.5" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="700" fill="#7c8899" text-anchor="middle">2</text>
+</g>
+<text class="in" style="animation-delay:0.5s" x="307.5" y="104" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8.5" fill="#7c8899" text-anchor="middle" letter-spacing="1.2">SECOND PRIZE</text>
+<text class="in" style="animation-delay:0.60s" x="307.5" y="119" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#64748b" text-anchor="middle">VN Mathematical Olympiad</text>
+<text class="in" style="animation-delay:0.7s" x="307.5" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">2026</text>
+<g class="up" style="animation-delay:0.50s">
+<path d="M485.5 68 l-4 16 6 -3 5 3 -3 -16z" fill="#b45309" opacity=".55"/>
+<path d="M499.5 68 l4 16 -6 -3 -5 3 3 -16z" fill="#b45309" opacity=".8"/>
+<circle cx="492.5" cy="60" r="15" fill="#ffffff" stroke="#b45309" stroke-width="2.5"/>
+<circle cx="492.5" cy="60" r="10.5" fill="#b45309" opacity=".13"/>
+<text x="492.5" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="700" fill="#b45309" text-anchor="middle">3</text>
+</g>
+<text class="in" style="animation-delay:0.65s" x="492.5" y="104" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8.5" fill="#b45309" text-anchor="middle" letter-spacing="1.2">THIRD PRIZE</text>
+<text class="in" style="animation-delay:0.75s" x="492.5" y="119" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#64748b" text-anchor="middle">VN Informatics Olympiad</text>
+<text class="in" style="animation-delay:0.85s" x="492.5" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">2024</text>
+<g class="up" style="animation-delay:0.65s">
+<path d="M670.5 68 l-4 16 6 -3 5 3 -3 -16z" fill="#2563eb" opacity=".55"/>
+<path d="M684.5 68 l4 16 -6 -3 -5 3 3 -16z" fill="#2563eb" opacity=".8"/>
+<circle cx="677.5" cy="60" r="15" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="677.5" cy="60" r="10.5" fill="#2563eb" opacity=".13"/>
+<text x="677.5" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="700" fill="#2563eb" text-anchor="middle">◆</text>
+</g>
+<text class="in" style="animation-delay:0.7999999999999999s" x="677.5" y="104" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8.5" fill="#2563eb" text-anchor="middle" letter-spacing="1.2">ICPC ASIA REGIONAL</text>
+<text class="in" style="animation-delay:0.90s" x="677.5" y="119" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#64748b" text-anchor="middle">Hanoi · Ho Chi Minh City</text>
+<text class="in" style="animation-delay:0.9999999999999999s" x="677.5" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">2024 · 2025</text>
+</svg>
