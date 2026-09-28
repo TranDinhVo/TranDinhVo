@@ -1,9 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" viewBox="0 0 180 50">
+<style>
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes ping{0%{r:3;opacity:.8}100%{r:11;opacity:0}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes shimmer{from{transform:translateX(-160px)}to{transform:translateX(160px)}}
+@keyframes bracket{from{stroke-dashoffset:28}to{stroke-dashoffset:0}}
+.up{opacity:0;animation:up .6s ease-out forwards}
+.in{opacity:0;animation:fade .6s ease-out forwards}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.6s ease-in-out infinite}
+.blink{animation:blink 1s step-end infinite}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow .8s cubic-bezier(.2,.8,.2,1) forwards}
+.br{stroke-dasharray:28;stroke-dashoffset:28;animation:bracket .7s ease-out forwards}
+
+@keyframes sweep{0%{transform:translateX(-120px)}30%,100%{transform:translateX(260px)}}
+.sweep{animation:sweep 4s ease-in-out 0.8s infinite}
+</style>
 <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-<path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e6ebf3" stroke-width="1"/></pattern></defs>
+<path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e6ebf3" stroke-width="1"/></pattern>
+<linearGradient id="sw" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<clipPath id="clip"><rect width="180" height="50" rx="6"/></clipPath></defs>
 <rect width="180" height="50" rx="6" fill="#2563eb"/>
+<g clip-path="url(#clip)"><rect class="sweep" x="0" y="0" width="80" height="50" fill="url(#sw)" transform="skewX(-20)"/></g>
 <rect x="0.5" y="0.5" width="179" height="49" rx="6" fill="none" stroke="#2563eb"/>
-<path d="M168 1 H179 V12" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-<g transform="translate(22 13) scale(1)"><path fill="#fff" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></g>
-<text x="58" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="600" fill="#fff" letter-spacing="2">GMAIL</text>
+<path class="br" d="M168 1 H179 V12" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+<g class="up" transform="translate(22 13)"><path fill="#fff" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></g>
+<text class="up" style="animation-delay:.15s" x="58" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="600" fill="#fff" letter-spacing="2">GMAIL</text>
 </svg>
