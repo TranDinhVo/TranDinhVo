@@ -102,6 +102,9 @@ CSS = """
 @keyframes bracket{from{stroke-dashoffset:28}to{stroke-dashoffset:0}}
 .in{opacity:0;animation:fade .6s ease-out forwards}
 .grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow .8s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes blip{0%{opacity:0}2%{opacity:1}7%{opacity:1}9%{opacity:0}100%{opacity:0}}
+.blip{opacity:0;animation:blip .8s linear forwards}
+.settle{opacity:0;animation:fade .25s ease-out forwards}
 .br{stroke-dasharray:28;stroke-dashoffset:28;animation:bracket .7s ease-out forwards}
 """
 
@@ -124,12 +127,12 @@ for i, (lbl, val, sub, col) in enumerate(items):
     parts.append(label(cx, 34, lbl, FAINT, 8, d))
     target = int(val.replace(",", ""))
     steps = 18
-    seq = [f"{round(target * (k / steps) ** 2):,}" for k in range(steps)] + [val]
-    for k, sv in enumerate(seq):
-        t0 = d + k * 0.06
-        last = k == len(seq) - 1
-        vis = f'<set attributeName="opacity" to="1" begin="{t0:.2f}s"/>' + ("" if last else f'<set attributeName="opacity" to="0" begin="{t0 + 0.06:.2f}s"/>')
-        parts.append(f'<text x="{cx}" y="72" font-family="{MONO}" font-size="30" font-weight="700" fill="{INK}" text-anchor="middle" opacity="0">{vis}{sv}</text>')
+    for k in range(steps):
+        sv = f"{round(target * (k / steps) ** 2):,}"
+        parts.append(f'<text class="blip" style="animation-delay:{d + k * 0.06:.2f}s" x="{cx}" y="72" '
+                     f'font-family="{MONO}" font-size="30" font-weight="700" fill="{INK}" text-anchor="middle">{sv}</text>')
+    parts.append(f'<text class="settle" style="animation-delay:{d + steps * 0.06:.2f}s" x="{cx}" y="72" '
+                 f'font-family="{MONO}" font-size="30" font-weight="700" fill="{INK}" text-anchor="middle">{esc(val)}</text>')
     parts.append(f'<line class="grow" style="animation-delay:{d + 0.9}s" x1="{cx - 16}" y1="80" x2="{cx + 16}" y2="80" stroke="{col}" stroke-width="2.5"/>')
     parts.append(label(cx, 98, sub, FAINT, 7.5, d + 1.0, 1))
 
