@@ -66,6 +66,8 @@
 | **[Learnex](https://github.com/TranDinhVo/Learnex)** | Mobile learning app | Flutter · Dart |
 | **PayHub** *(private)* | PayPal transaction & order management — CSV import pipeline, RBAC, Decimal money handling | NestJS · Next.js · Prisma · PostgreSQL |
 | **FinanceOS** *(private)* | Accounting platform — multi-currency, cash-flow state machine, audit log, 2FA | Next.js · Prisma · PostgreSQL · Ant Design |
+| **TrendScope** *(private)* | Keyword & product trend tracker for SEO — scheduled ingestion pipeline, 30-day trend snapshots, Swagger API | NestJS · Next.js · Turborepo · PostgreSQL · Docker |
+| **MonkeyMail** *(private)* | Desktop email client — multi-account IMAP/SMTP sync, conversation threading, offline SQLite cache | Tauri · React · Node.js · SQLite |
 
 ### GitHub stats
 
