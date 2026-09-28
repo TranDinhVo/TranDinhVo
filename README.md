@@ -13,7 +13,19 @@
 </p>
 
 <p align="center">
+  <img src="assets/terminal.svg" alt="whoami" width="800">
+</p>
+
+<p align="center">
   <img src="assets/skills.svg" alt="Tech stack" width="800">
+</p>
+
+<p align="center">
+  <img src="assets/architecture.svg" alt="Typical system architecture" width="800">
+</p>
+
+<p align="center">
+  <img src="assets/awards.svg" alt="Awards and competitive programming" width="800">
 </p>
 
 <p align="center">
