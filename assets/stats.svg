@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="120" viewBox="0 0 800 120">
+<defs>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e6ebf3" stroke-width="1"/>
+  </pattern>
+</defs>
+<rect width="800" height="120" rx="6" fill="#fbfcfe"/>
+<rect width="800" height="120" rx="6" fill="url(#grid)"/>
+<rect x="0.5" y="0.5" width="799" height="119" rx="6" fill="none" stroke="#cfd8e6"/>
+<g fill="none" stroke="#0f172a" stroke-width="1.5">
+  <path d="M10 24 V10 H24"/>
+  <path d="M776 10 H790 V24"/>
+  <path d="M10 96 V110 H24"/>
+  <path d="M776 110 H790 V96"/>
+</g>
+<text x="115.0" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#94a3b8" text-anchor="middle" letter-spacing="2">TOTAL CONTRIBUTIONS</text>
+<text x="115.0" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">1,822</text>
+<line x1="99.0" y1="80" x2="131.0" y2="80" stroke="#d97706" stroke-width="2.5"/>
+<text x="115.0" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">JUL 2023 – PRESENT</text>
+<text x="305.0" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#94a3b8" text-anchor="middle" letter-spacing="2">THIS YEAR</text>
+<text x="305.0" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">1,471</text>
+<line x1="289.0" y1="80" x2="321.0" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+<text x="305.0" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">JAN 1 – SEP 28, 2026</text>
+<text x="495.0" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#94a3b8" text-anchor="middle" letter-spacing="2">LONGEST STREAK</text>
+<text x="495.0" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">11</text>
+<line x1="479.0" y1="80" x2="511.0" y2="80" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="495.0" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">JUN 30 – JUL 10, 2026</text>
+<text x="685.0" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="8" fill="#94a3b8" text-anchor="middle" letter-spacing="2">PUBLIC REPOS</text>
+<text x="685.0" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">33</text>
+<line x1="669.0" y1="80" x2="701.0" y2="80" stroke="#16a34a" stroke-width="2.5"/>
+<text x="685.0" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="7.5" fill="#94a3b8" text-anchor="middle" letter-spacing="1">ON GITHUB</text>
+</svg>
