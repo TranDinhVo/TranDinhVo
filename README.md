@@ -25,6 +25,10 @@
 </p>
 
 <p align="center">
+  <img src="assets/journey.svg" alt="Journey" width="800">
+</p>
+
+<p align="center">
   <img src="assets/awards.svg" alt="Awards and competitive programming" width="800">
 </p>
 
@@ -33,6 +37,10 @@
   <img src="assets/proj-payhub.svg" alt="PayHub" width="190">
   <img src="assets/proj-financeos.svg" alt="FinanceOS" width="190">
   <img src="assets/proj-monkeymail.svg" alt="MonkeyMail" width="190">
+</p>
+
+<p align="center">
+  <img src="assets/rhythm.svg" alt="When I commit" width="800">
 </p>
 
 <p align="center">
